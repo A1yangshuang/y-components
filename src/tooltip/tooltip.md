@@ -20,7 +20,7 @@ group:
  */
 
 import React from 'react';
-import { Tooltip } from 'y-components';
+import { Tooltip } from '@a1yyss/y-comps';
 
 export default () => (
   <div>

@@ -20,7 +20,7 @@ group:
  */
 
 import React, { useState } from 'react';
-import { Spin } from 'y-components';
+import { Spin } from '@a1yyss/y-comps';
 
 const App = () => {
   const [spinning, setSpinning] = useState(true);
@@ -53,7 +53,7 @@ export default App;
  */
 
 import React from 'react';
-import { Spin } from 'y-components';
+import { Spin } from '@a1yyss/y-comps';
 
 export default () => (
   <div className="h-20">

@@ -20,7 +20,7 @@ group:
  */
 
 import React from 'react';
-import { Pagination } from 'y-components';
+import { Pagination } from '@a1yyss/y-comps';
 
 export default () => <Pagination total={50} />;
 ```
@@ -33,7 +33,7 @@ export default () => <Pagination total={50} />;
  */
 
 import React from 'react';
-import { Pagination } from 'y-components';
+import { Pagination } from '@a1yyss/y-comps';
 
 export default () => <Pagination showQuickJumper total={500} />;
 ```

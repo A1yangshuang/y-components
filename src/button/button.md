@@ -18,7 +18,7 @@ group:
  */
 
 import React from 'react';
-import { Button } from 'y-components';
+import { Button } from '@a1yyss/y-comps';
 
 export default () => <Button>按钮</Button>;
 ```

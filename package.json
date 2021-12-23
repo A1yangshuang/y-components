@@ -1,10 +1,25 @@
 {
-  "name": "y-components",
-  "version": "1.0.0",
+  "name": "@a1yyss/y-comps",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "description": "test",
+  "module": "es/index.js",
+  "typings": "lib/index.d.ts",
   "files": [
-    "es"
+    "es",
+    "lib",
+    "dist"
+  ],
+  "keywords": [
+    "ts",
+    "tailwindcss",
+    "components"
+  ],
+  "sideEffects": [
+    "dist/*",
+    "es/**/style/*",
+    "lib/**/style/*",
+    "*.less"
   ],
   "scripts": {
     "start": "dumi dev",
@@ -16,19 +31,20 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
-    "release": "ts-node ./scripts/release.ts"
+    "release": "npm publish",
+    "clean": "rm -rf es lib dist"
   },
   "gitHooks": {
     "pre-commit": "lint-staged"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/A1yangshuang/y-components"
+    "url": "git+https://github.com/A1yangshuang/@a1yyss/y-comps"
   },
   "bugs": {
-    "url": "https://github.com/A1yangshuang/y-components/issues"
+    "url": "https://github.com/A1yangshuang/@a1yyss/y-comps/issues"
   },
-  "homepage": "https://github.com/A1yangshuang/y-components#readme",
+  "homepage": "https://github.com/A1yangshuang/@a1yyss/y-comps#readme",
   "lint-staged": {
     "**/*.less": "stylelint",
     "*.{js,jsx,md,json}": [
@@ -38,9 +54,6 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "keywords": [
-    "ts"
-  ],
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "@typescript-eslint/parser": "^5.8.0",

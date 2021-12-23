@@ -20,7 +20,7 @@ group:
  */
 
 import React from 'react';
-import { Popover } from 'y-components';
+import { Popover } from '@a1yyss/y-comps';
 
 export default () => (
   <div className="flex items-center justify-center">
@@ -40,7 +40,7 @@ export default () => (
  */
 
 import React from 'react';
-import { Popover } from 'y-components';
+import { Popover } from '@a1yyss/y-comps';
 
 export default () => (
   <div className="flex items-center justify-center">

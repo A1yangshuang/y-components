@@ -9,10 +9,12 @@ interface ButtonProps {
   disabled?: boolean;
   type?: typeof ButtonTypes[number];
   children?: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties | undefined;
 }
 
 const Button = (props: ButtonProps): React.ReactElement => {
-  const { disabled, children, type = 'primary' } = props;
+  const { disabled, children, type = 'primary', style, className = '' } = props;
 
   const prefixCls = 'vfc-btn';
 
@@ -22,7 +24,7 @@ const Button = (props: ButtonProps): React.ReactElement => {
   console.log(classes);
 
   return (
-    <button className={`${classes} a`} type="button" disabled={disabled}>
+    <button className={`${classes} ${className}`} style={style} type="button" disabled={disabled}>
       <span>{children}</span>
     </button>
   );
