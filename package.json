@@ -19,7 +19,7 @@
     "dist/*",
     "es/**/style/*",
     "lib/**/style/*",
-    "*.less"
+    "./src/**/*.less"
   ],
   "scripts": {
     "start": "dumi dev",
