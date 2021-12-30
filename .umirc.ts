@@ -13,6 +13,7 @@ export default defineConfig({
   history: {
     type: 'hash',
   },
+  exportStatic: {},
   chainWebpack(memo) {
     memo.module
       .rule('js')
