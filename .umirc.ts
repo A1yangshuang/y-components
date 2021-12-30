@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 import { join } from 'path';
 
 export default defineConfig({
-  base: '/',
+  base: '/y-components',
   publicPath: '/',
   title: '@a1yyss/y-comps',
   favicon:
