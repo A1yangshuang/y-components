@@ -1,0 +1,19 @@
+@import '../style/index.less';
+@import '../style/themes/default.less';
+
+@btn-prefix-cls: ~'vfc-btn';
+
+.@{btn-prefix-cls} {
+  &-primary {
+    background-color: @primary-color;
+    @apply px-4 py-2 rounded-lg outline-none text-white;
+
+    &:hover {
+      background-color: @primary-color-hover;
+    }
+
+    &:active {
+      background-color: @primary-color-active;
+    }
+  }
+}
