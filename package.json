@@ -44,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/A1yangshuang/@a1yyss/y-comps/issues"
   },
-  "homepage": "https://github.com/A1yangshuang/@a1yyss/y-comps#readme",
+  "homepage": "https://a1yangshuang.github.io/y-components/",
   "lint-staged": {
     "**/*.less": "stylelint",
     "*.{js,jsx,md,json}": [
