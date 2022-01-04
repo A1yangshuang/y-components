@@ -20,5 +20,5 @@ group:
 import React from 'react';
 import { Button } from '@a1yyss/y-comps';
 
-export default () => <Button>按钮</Button>;
+export default () => <Button>按钮哈哈哈</Button>;
 ```
